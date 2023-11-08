@@ -1,0 +1,9 @@
+.*.swp
+doc
+build
+target
+Cargo.lock
+scratch*
+__pycache__
+
+.vscode

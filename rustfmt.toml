@@ -1,0 +1,8 @@
+max_width = 100
+newline_style = "Unix"
+merge_derives = true
+force_explicit_abi = true
+edition = "2018"
+reorder_imports = true
+hard_tabs = true
+use_try_shorthand = true
