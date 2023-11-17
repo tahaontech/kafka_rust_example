@@ -16,7 +16,7 @@ name = "kafka_rust_example"
 path = "src/main.rs"
 
 [build-dependencies]
-prost-build = "0.10.3"
+prost-build = "0.12.2"
 
 [dependencies]
 anyhow = "1.0.44"
