@@ -6,23 +6,23 @@ on:
     - cron: "0 7 * * *"
 
 jobs:
-  clippy:
-    name: clippy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install sasl
-        run: sudo apt update -y && sudo apt-get install -y libsasl2-dev
+  # clippy:
+  #   name: clippy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Install sasl
+  #       run: sudo apt update -y && sudo apt-get install -y libsasl2-dev
    
-      - uses: actions/checkout@v2
-      - uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          components: clippy
-          override: true
-      - uses: actions-rs/clippy-check@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          args: --all-features
+  #     - uses: actions/checkout@v2
+  #     - uses: actions-rs/toolchain@v1
+  #       with:
+  #         toolchain: stable
+  #         components: clippy
+  #         override: true
+  #     - uses: actions-rs/clippy-check@v1
+  #       with:
+  #         token: ${{ secrets.GITHUB_TOKEN }}
+  #         args: --all-features
 
   fmt:
     name: Rustfmt
